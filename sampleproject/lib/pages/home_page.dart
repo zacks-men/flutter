@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+// ignore_for_file: prefer_const_constructors
+import 'dart:async';
 
 class HomePage extends StatelessWidget {
-  final int days = 30;
+  final int days = 15;
   final String course = 'flutter';
 
   @override
@@ -9,7 +11,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       // app bar acts like a head
       appBar: AppBar(
-        title: Text("Catalog App"),
+        title: Text("Catalog App."),
       ),
       // body tag
       body: Center(

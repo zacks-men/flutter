@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sampleproject/home_page.dart';
+import 'package:sampleproject/pages/home_page.dart';
+import 'package:sampleproject/pages/loginpage.dart';
+// ignore_for_file: prefer_const_constructors
+import 'dart:async';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +17,23 @@ class MyApp extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      //home: HomePage(),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(primarySwatch: Colors.red),
+      // the theme data properties are defined below
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      // routes
+      //an app has alot of pages
+      /* an app starts so it has
+       multiple routes to  multiple pages
+       it has maps 
+      */
+      routes: {
+        "/": (context) => LogInPage(), //slash is home route
+        "/HomePage": (context) => HomePage(),
+      },
     );
   }
 }
