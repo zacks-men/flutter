@@ -9,14 +9,21 @@ class LogInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "my first app",
+          textAlign: TextAlign.center,
+        ),
+      ),
       body: Center(
           child: Text(
         "login Page !",
         style: TextStyle(
-            fontSize: 40,
-            color: Colors.blue,
-            fontWeight: FontWeight.bold,
-            fontStyle: FontStyle.italic),
+          fontSize: 40,
+          color: Colors.blue,
+          fontWeight: FontWeight.bold,
+          fontStyle: FontStyle.italic,
+        ),
       )),
     );
   }

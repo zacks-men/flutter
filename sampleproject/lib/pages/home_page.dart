@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       // app bar acts like a head
       appBar: AppBar(
-        title: Text("Catalog App."),
+        title: Text("Catalog App.", textAlign: TextAlign.center),
       ),
       // body tag
       body: Center(

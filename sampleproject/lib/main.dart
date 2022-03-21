@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
        multiple routes to  multiple pages
        it has maps 
       */
+      initialRoute: "/HomePage",
       routes: {
         "/": (context) => LogInPage(), //slash is home route
         "/HomePage": (context) => HomePage(),
